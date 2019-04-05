@@ -10,3 +10,7 @@ SRC_URI[sha256sum] = "5dbb360b882b2dabe0471a1a92f604504d83c2a73c71f2098d004ab62e
 
 PYPI_PACKAGE = "python-slugify"
 inherit pypi
+
+RDEPEND_${PN} += "\
+	python-unidecode \
+"
